@@ -1,0 +1,526 @@
+
+    
+.first_image{
+      width:1250px;
+      height:500px;
+      position:relative;
+}
+.container {
+      position: absolute;
+      top: 70%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      color:white;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      z-index: 1;
+}
+    
+  .image-wrapper2 {
+      position: absolute;
+      top: 100%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+  }
+  .logo{
+    width:100px;
+    height:50px;
+    margin-left:200px;
+  }
+  nav {
+          display: flex; 
+          justify-content: flex-end;
+          margin-bottom: 10px;
+      }
+  
+      nav ul {
+          list-style: none; 
+          display: flex; 
+          margin-right: 100px;
+      }
+  
+      nav ul li {
+          margin-right: 15px; 
+      }
+  
+      nav ul li a {
+          text-decoration: none;
+          color:grey;
+      }
+  
+ 
+.abc{
+    background-color: darkgrey;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    width:1229px;
+}
+header{
+  position: relative;
+  height:130px;
+  background-color: white;
+}
+nav ul li a:hover {
+  background-color: green; 
+  color: white; 
+}
+.search-bar {
+  position: absolute;
+  bottom: 80px;
+  right: 120px;
+  display: flex;
+  justify-content: flex-end; 
+
+  margin-top: 10px; 
+}
+
+.search-bar input[type="search"] {
+  width: 200px;
+  height: 30px; 
+  padding: 5px; 
+  align-items: right;
+}
+.container {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50vh;
+}
+.container p {
+  text-align: right;
+  margin-bottom:20;
+}
+
+.contact-info{
+  position: absolute;
+  bottom: 65px;
+  right: 325px;
+  display: flex;
+  justify-content: flex-end;
+  
+  margin-top: 10px; 
+  font-style:italic;
+  }
+.logo1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 300px;
+}
+.logo1 .download-button {
+  margin-left: 10px; 
+  background-color: green;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.logo1 .download-button p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.container .contact-us-now {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container .button-rectangle {
+  background-color: greenyellow;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.container .button-rectangle p {
+  margin: 0;
+  font-size: 16px;
+}
+.logo1 .download-button:hover {
+  background-color: darkgreen;
+}
+
+.container .button-rectangle:hover {
+  background-color: darkgreen;
+}
+
+scroll-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+}
+.first_image {
+  position: relative;
+}
+
+.image-button {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  width: 45px;
+  height:45px;
+}
+
+.image-button:hover {
+  background-color: yellowgreen; 
+}
+
+.About_Us {
+  padding: 10px; 
+  text-align: justify; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  position: relative;
+  height: 700px;
+}
+
+.About_Us h2 {
+  font-size: 32px;
+}
+
+.About_Us p {
+  font-size: 16px;
+  margin-bottom: 10px; 
+}
+.About_Us.content.important_line{
+  font-size: 32px;
+}
+.contact1 {
+  margin-left: 10px; 
+  background-color: yellowgreen;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  
+}
+.contact1:hover{
+  background-color: green;
+}
+.second_image {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  width: 300px; 
+}
+
+.second_image {
+  max-width: 100%;
+  height: auto;
+}
+
+.About_Us .content .important_line {
+    font-size: 25px;
+    color: grey;
+}
+.third_image img {
+  width: 1250px;
+}
+
+.fourth_image {
+  position: relative;
+}
+.fourth_image img {
+  width: 1250px;
+  height: auto;
+  margin-top: -20px;
+}
+
+
+
+
+.fourth_image .card {
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  height:400px;
+  width: 300px;
+  z-index: 1;
+  
+}
+
+.fourth_image .card2 {
+  position: absolute;
+  top: 9.5%;
+  right: 300px;
+  background-color: white;
+  padding: 20px;
+  height:400px;
+  width: 300px;
+  z-index: 1;
+}
+.card img {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.card2 img {
+  max-width: 80px;
+  max-height: 80px;
+  margin: left 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.card_button{
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  padding: 13px 25px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  width: 100px;
+  height:30px;
+  font-display: center;
+}
+
+.card_button:hover {
+  background-color: darkgreen; 
+}
+
+.card_button2{
+  position:absolute;
+  top:80%;
+  right:30%;
+  padding: 13px 25px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  width: 100px;
+  height:30px;
+}
+.card_button2:hover{
+  background-color: darkgreen;
+}
+.our_clients img{
+  
+  width: 1250px;
+  height: 500px;
+  margin-top: -20px;
+}
+.blog_post {
+  text-align: center;
+  height: 100px; 
+}
+
+.blog_post p {
+  font-size: 40px; 
+  line-height: 100px; 
+  margin: 0;
+}
+.img1 {
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin:10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.img1 .image-container .read_more {
+  background-color:yellowgreen;
+  color:black;
+  height:10px;
+  display: inline-block;
+  padding: 20px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.img1 .image-container .read_more:hover {
+  background-color: green;
+}
+ 
+.dummy_text{
+  background-color: darkgrey;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  height: 150px;
+  width:1229px;
+}
+.dummy_text p{
+  font-size: 50px;
+  line-height: 50px;
+  margin:center;
+}
+
+.logo5 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 300px;
+}
+
+.logo5 img{
+  width:50px;
+  height:50px;
+}
+
+
+.download-button {
+  display: flex;
+  align-items: center;
+  background-color:yellowgreen;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.download-button span {
+  margin: 0;
+  font-size: 16px;
+}
+.download-button:hover{
+  background-color: green;
+}
+.contact {
+  display: flex;
+  background-color: dimgray;
+  height: 400px;
+  width: 1250px;
+}
+
+
+
+.logo6 {
+  height: 300px;
+  width: 500px;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 200px;
+  margin-top:100px;
+}
+
+.logo6 {
+  height: 300px;
+  width: 650px;
+}
+
+.logo6 img {
+  max-width: 70%;
+  max-height: 70%;
+}
+.logo6.text p {
+  font-size: 200px;
+  margin-left: 200px;
+
+}
+.booking p {
+  margin-top:30px;
+  font-size: 20px;
+}
+
+
+.Book {
+  display: flex;
+  align-items: center;
+  background-color:yellowgreen;
+  color: white;
+  padding: 10px 20px;
+  width:150px;
+  height:50px;
+}
+
+.Book span {
+  margin: 0;
+  font-size: 16px;
+}
+.Book:hover{
+  background-color: green;
+}
+
+
+.Book1 {
+  display: flex;
+  align-items: center;
+  background-color:yellowgreen;
+  color: white;
+  padding: 10px 20px;
+  width:150px;
+  height:50px;
+  margin-top: 25px;
+}
+
+.Book1 span {
+  margin: 0;
+  font-size: 16px;
+}
+.Book1:hover{
+  background-color: green;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  width: 1250px;
+  background-color: dimgray;
+}
+
+.box1, .box2, .box3 {
+  flex: 1;
+  padding: 20px;
+  font-size: 16px;
+  text-align:center;
+  color:white;
+  left: 300px;
+  
+}
+
+.end{
+  height:150px;
+  background-color:black;
+  width: 1250px;
+}
+
+
+.image-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+.image-list li {
+  margin-right: 10px;
+}
+
+.image-list img {
+  width: 50px;
+  height: 50px;
+}
