@@ -1,10 +1,12 @@
+
 $(document).ready(function() {
+    console.log("abc");
     const form = $("#myForm");
     const submitButton = $("#submit");
-  
+
     submitButton.on("click", function(event) {
         event.preventDefault(); // Prevent the default form submission
-    
+
         const firstNameInput = $("#firstname");
         const lastNameInput = $("#lastname");
         const phoneInput = $("#phone");
@@ -13,9 +15,9 @@ $(document).ready(function() {
         const passwordInput = $("#password");
         const conpasswordInput = $("#conpassword");
         const aboutInput = $("#txt-about");
-        const monthInput = $('#birth-month')
-        const dayInput = $('#birth-day')
-        const yearInput = $('#birth-year')
+        const monthInput = $('#birth-month');
+        const dayInput = $('#birth-day');
+        const yearInput = $('#birth-year');
         const firstNameError = $("#firstname-error");
         const lastNameError = $("#lastname-error");
         const phoneError = $("#phone-error");
@@ -27,21 +29,36 @@ $(document).ready(function() {
         const intError = $("#interror");
         const aboutError = $("#aberror");
         let isValid = true;
-    
+
+        const specialCharRegex = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
+        const numericRegex = /^\d+$/;
+
         if (firstNameInput.val().trim() === "") {
             firstNameError.text("First name is required.");
+            isValid = false;
+        } else if (numericRegex.test(firstNameInput.val().trim())) {
+            firstNameError.text("First name cannot be a number.");
+            isValid = false;
+        } else if (specialCharRegex.test(firstNameInput.val().trim())){
+            firstNameError.text("First name cannot be a special character.");
             isValid = false;
         } else {
             firstNameError.text("");
         }
-    
+
         if (lastNameInput.val().trim() === "") {
             lastNameError.text("Last name is required.");
+            isValid = false;
+        } else if (numericRegex.test(lastNameInput.val().trim())) {
+            lastNameError.text("Last name cannot be a number.");
+            isValid = false;
+        } else if (specialCharRegex.test(lastNameInput.val().trim())) {
+            lastNameError.text("Last name cannot be a special character.");
             isValid = false;
         } else {
             lastNameError.text("");
         }
-    
+           
         if (phoneInput.val().trim() === "") {
             phoneError.text("Phone number is required.");
             isValid = false;
@@ -137,43 +154,36 @@ $(document).ready(function() {
         } else {
             aboutError.text("");
         }
-        
-            
+        // Validation code for other fields...
 
-
-
-
-    
-        // Other form validation and submission code...
         if (isValid) {
             form.submit();
         }
     });
 
+ 
 
-    $(document).ready(function() {
-        const startYear = 1900;
-        const endYear = new Date().getFullYear();
-        const selectYear = $("#birth-year");
-      
-        for (let year = endYear; year >= startYear; year--) {
-          const option = $("<option></option>").val(year).text(year);
-        //   option.val(year);
-        //   option.textContent(year);
-          selectYear.append(option);
-        }
-      });
-      
-    function isValidPhoneNumber(phoneNumber) {
-      const phoneRegex = /^\d{10}$/;
-      return phoneRegex.test(phoneNumber);
-    }
+// const startYear = 1900;
+// const endYear = new Date().getFullYear();
+// const selectYear = $("#birth-year");
 
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-  
-    // Other validation functions...
-  });
-  
+// for (let year = endYear; year >= startYear; year--) {
+//   const option = $("<option>").val(year).text(year);
+//   selectYear.append(option);
+// }
+
+const startYear = 1900;
+const endYear = new Date().getFullYear();
+const selectYear = $("#birth-year");
+
+// Clear existing options in the "birth-year" select box
+selectYear.html('<option value="year">year</option>');
+
+// Populate the "birth-year" select box with years from startYear to endYear
+for (let year = endYear; year >= startYear; year--) {
+  const option = $("<option>").val(year).text(year);
+  selectYear.append(option);
+}
+
+});
+

@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const aboutError = document.querySelector('#aberror')
         let isValid = true;
         
+        const specialCharRegex = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
 
         const numericRegex = /^\d+$/;
 
@@ -38,7 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (numericRegex.test(firstNameInput.value.trim())) {
           firstNameError.textContent = "First name cannot be a number.";
           isValid = false;
-        } else {
+        } else if (specialCharRegex.test(firstNameInput.value.trim())){
+          firstNameError.textContent = "first name cannot be a special character";
+          isValid = false;
+        }
+      else {
           firstNameError.textContent = "";
         }
         if (aboutInput.value.trim()=== '') {
@@ -55,7 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (numericRegex.test(lastNameInput.value.trim())) {
           lastNameError.textContent = "Last name cannot be a number.";
           isValid = false;
-        } else {
+        } else if (specialCharRegex.test(lastNameInput.value.trim())) {
+          lastNameError.textContent = "Last name cannot be a special character.";
+          isValid = false;}
+          else {
           lastNameError.textContent = "";
         }
     
@@ -167,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     
     const startYear = 1900;
-    const endYear = new Date().getFullYear(); // Get the current year
+    const endYear = new Date().getFullYear(); 
     const selectYear = document.getElementById("birth-year");
 
     for (var year = endYear; year >= startYear; year--) {
